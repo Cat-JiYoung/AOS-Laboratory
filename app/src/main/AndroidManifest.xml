@@ -26,6 +26,14 @@
 
         <activity
             android:name=".presentation.register.ExampleHomeActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".presentation.register.InputInviteCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.main.ExampleMainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -33,14 +41,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity
-            android:name=".presentation.register.InputInviteCodeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.main.MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>
