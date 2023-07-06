@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_home_dashboard"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:contentInsetEnd="0dp"
@@ -63,6 +64,30 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/tb_home_dashboard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicatorColor="#5085FF"
+            app:tabSelectedTextColor="#5085FF"
+            app:tabTextColor="#ABADB2"
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개인 대시보드"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="팀 대시보드"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
